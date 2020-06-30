@@ -7,6 +7,7 @@ app.use(morgan('dev'));
 
 ///This is the home Route
 app.get('/',(req,res) =>{
+    res.setHeader('set-cookie','initcookie=1')
     res.send('This is the server');
 })
 
